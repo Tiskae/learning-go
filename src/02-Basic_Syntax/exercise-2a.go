@@ -9,7 +9,7 @@ func main() {
 	// 2. Iterate over that sentence using `range`.
 	for pos, letter := range sentence {
 		// 3. If the index of that letter is an odd number, print that letter.
-		if pos%2 == 1 {
+		if pos%2 == 0 {
 			fmt.Println(string(letter))
 		}
 		// 4. What do you notice?
