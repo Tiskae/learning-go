@@ -14,7 +14,7 @@ type Coordinates struct {
 	X, Y float64
 }
 
-func main() {
+func pointers() {
 	var name string = "Zoyah"
 	var namePointer *string = &name
 
