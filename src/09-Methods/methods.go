@@ -8,7 +8,7 @@ type User struct {
 }
 
 // Method
-func (u *User) describe() string {
+func (u *User) Describe() string {
 	desc := fmt.Sprintf("ID: %d\nName: %s %s\nEmail %s", u.ID, u.Lastname, u.Firstname, u.Email)
 	return desc
 }
@@ -19,11 +19,11 @@ func describe(u *User) string {
 	return desc
 }
 
-func main() {
+func methods() {
 	user1 := User{ID: 005, Firstname: "Ibrahim", Lastname: "Adedokun", Email: "ibrahim@bendingspoons.com"}
 
 	descFunctional := describe(&user1)
-	descMethod := user1.describe()
+	descMethod := user1.Describe()
 
 	fmt.Println(descFunctional)
 	fmt.Println(descMethod)
