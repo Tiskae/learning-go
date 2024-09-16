@@ -28,7 +28,7 @@ func openFile(filePath string) error {
 	return nil
 }
 
-func main() {
+func Error() {
 	githubLink := "https://github.coom/tiskae"
 	if err := isInvalidGithubLink((githubLink)); err != nil {
 		fmt.Println(err)
