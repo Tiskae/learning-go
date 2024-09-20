@@ -26,5 +26,8 @@ func main() {
 	http.HandleFunc("/", home)
 	http.HandleFunc("/todos/", todos)
 	fmt.Println("Server listening on port :8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	// log.Fatal(http.ListenAndServe(":8080", nil))my name is deborah
+	// i am a girl
+	// the name of my school is obafemi awolowo univeristy
+
 }
