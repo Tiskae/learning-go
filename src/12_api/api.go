@@ -9,19 +9,19 @@ import (
 )
 
 type Planet struct {
-	Name       string `json:"name`
-	Population string `json:"population`
-	Terrain    string `json:"terrain`
+	Name       string `json:"name"`
+	Population string `json:"population"`
+	Terrain    string `json:"terrain"`
 }
 
 type Person struct {
-	Name         string `json:"name`
-	HomeworldURL string `json:"homeworld`
+	Name         string `json:"name"`
+	HomeworldURL string `json:"homeworld"`
 	Homewrorld   Planet
 }
 
 type AllPeople struct {
-	People []Person `json:"results`
+	People []Person `json:"results"`
 }
 
 func getHome(w http.ResponseWriter, r *http.Request) {
